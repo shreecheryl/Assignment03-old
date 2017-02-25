@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Assignment 3 Part 1</title>
     <script>
-    
+        // Practic with Arrays
+        
         // STEP 1
         /*
         var favMovies = ["Lars and the Real Girl", "Billy Jack", "Rocky Horror Picture Show", "March of the Penguins", "Temple Grandin"];
@@ -167,25 +168,47 @@
         */
         
         // STEP 16
-        
+        /*
         var movies = [["Lars and the Real Girl", 1], ["March of the Penguins", 2], ["Blackfish", 3], ["Temple Grandin", 4], ["Selma", 5]];
         
-        var movieNames = movies.filter(function(item) { 
-            return typeof item == "number";
-        });
-        console.log(yearsWithCompany);
-
+        for (var i in movies) {
+            var movieName = movies[i].filter(function(item) { 
+            return typeof item == "string";
+            });
+            window.console.log(movieName[0]);
+        }
+        */
         
+        // Practice with Functions
         
-
+        // STEP 1
+        /*
+        var displayMessage = function(msg) {
+            window.console.log(msg);
+        }
+        displayMessage("Hello, World!");
+        */
         
+        // STEP 2
+        /*
+        var remainder = function calculate(x, y) {
+            return x % y;
+        }
+        window.console.log(remainder(15, 4));        
+        */
+       
+        // STEP 3
+        /*
+        var employees = ["ZAK", "JESSICA", "MARK", "FRED", "SALLY"];
+        var showEmployee = function(list) {
+            window.console.log ("Employees:\n\n")
+            for (var i in list) {
+                window.console.log(list[i]);
+            }
+        }
+        showEmployee(employees);
+        */
         
-        
-        
-        
-        
-    
-    
     </script>
 </head>
 <body>
