@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 3 Part 1</title>
+    <script>
+    
+        // STEP 1
+        /*
+        var favMovies = ["Lars and the Real Girl", "Billy Jack", "Rocky Horror Picture Show", "March of the Penguins", "Temple Grandin"];
+        window.console.log(favMovies[1]);
+        */
+        
+        // STEP 2
+        /*
+        var movies = [];
+        movies[0] = "Lars and the Real Girl";
+        movies[1] = "Billy Jack";
+        movies[2] = "Rocky Horror Picture Show";
+        movies[3] = "March of the Penguins";
+        movies[4] = "Temple Grandin";
+        window.console.log(movies[0]);
+        
+        
+        // STEP 3
+        
+        movies.splice(2, 0, "Selma");
+        window.console.log(movies.length);
+        */
+        
+        // STEP 4
+        /*
+        var movies = [];
+        movies[0] = "Lars and the Real Girl";
+        movies[1] = "Billy Jack";
+        movies[2] = "Rocky Horror Picture Show";
+        movies[3] = "March of the Penguins";
+        movies[4] = "Temple Grandin";
+        delete movies[0];
+        window.console.log(movies);
+        */
+        
+        // STEP 5
+        /*
+        var movies = [];
+        movies[0] = "Lars and the Real Girl";
+        movies[1] = "Billy Jack";
+        movies[2] = "Rocky Horror Picture Show";
+        movies[3] = "March of the Penguins";
+        movies[4] = "Temple Grandin";
+        movies[5] = "A Beautiful Mind";
+        movies[6] = "Blackfish";
+        
+        for (var i = 0; i < movies.length; i++) {
+            window.console.log(movies[i]);
+        }
+    
+        // STEP 6
+      
+        for (var i in  movies) {
+            window.console.log(movies[i]);
+        }
+        
+        
+        // STEP 7
+    
+        movies.sort();
+        for (var i in  movies) {
+            window.console.log(movies[i]);
+        }
+        */
+        
+        // STEP 8
+        /*
+        var movies = [];
+        movies[0] = "Lars and the Real Girl";
+        movies[1] = "Billy Jack";
+        movies[2] = "Rocky Horror Picture Show";
+        movies[3] = "March of the Penguins";
+        movies[4] = "Temple Grandin";
+        movies[5] = "A Beautiful Mind";
+        movies[6] = "Blackfish";
+        
+        var leastFavMovies = ["Purple Rain", "Jaws", "E.T. the Extra-Terrestrial"];
+        
+        window.console.log("Movies I like:\n\n");
+        for (var i in movies) {
+            window.console.log(movies[i]);
+        }
+        window.console.log("\nMovies I regret watching:\n\n");
+        for (var i in leastFavMovies) {
+            window.console.log(leastFavMovies[i]);
+        }
+        
+        // STEP 9
+        
+        movies = movies.concat(leastFavMovies);
+        window.console.log(movies.sort().reverse());
+        
+        
+        // STEP 10
+        /*
+        window.console.log(movies.pop());
+        */
+        
+        // STEP 11
+        /*
+        window.console.log(movies.shift());
+        */
+        
+        // STEP 12
+        /*
+        var moreGoodMovies = ["Forrest Gump", "Fargo", "The Cove"];
+        var firstToReplace = movies.indexOf(leastFavMovies[0]);
+        var secondToReplace = movies.indexOf(leastFavMovies[1]);
+        var thirdToReplace = movies.indexOf(leastFavMovies[2]);
+        movies[firstToReplace] = moreGoodMovies[0];
+        movies[secondToReplace] = moreGoodMovies[1];
+        movies[thirdToReplace] = moreGoodMovies[2];
+        window.console.log(movies);
+        */
+        
+        // STEP 13
+        /*
+        var employee1 = [];
+        employee1["id"] = 6253;
+        employee1["name"] = "Cheryl Davis";
+        employee1["title"] = "Dog Walker";
+        employee1["department"] = "Dog Care";
+        employee1["isCurrent"] = true;
+        
+        var employee2 = [];
+        employee2["id"] = 6254;
+        employee2["name"] = "Casey Gerdes";
+        employee2["title"] = "Dog Washer";
+        employee2["department"] = "Dog Care";
+        employee2["isCurrent"] = true;
+        
+        employees = [employee1, employee2];
+        
+        window.console.log(employees[1]["name"]);
+        
+        
+        // STEP 14
+        
+        for (var i in employees) {
+            window.console.log(employees[i]["name"]);
+        }
+        
+        
+        // STEP 15
+        
+        var employee3 = [];
+        employee3["id"] = 6255;
+        employee3["name"] = "Brian Carvalho";
+        employee3["title"] = "Dog Trainer";
+        employee3["department"] = "Dog Care";
+        employee3["isCurrent"] = false;
+        
+        employees[2] = employee3;
+        
+        for (var i in employees) {
+            if (employees[i]["isCurrent"]) {
+                window.console.log(employees[i]["name"]);
+            }
+        }
+        */
+        
+        // STEP 16
+        
+        var movies = [["Lars and the Real Girl", 1], ["March of the Penguins", 2], ["Blackfish", 3], ["Temple Grandin", 4], ["Selma", 5]];
+        
+        var movieNames = movies.filter(function(item) { 
+            return typeof item == "number";
+        });
+        console.log(yearsWithCompany);
+
+        
+        
+
+        
+        
+        
+        
+        
+        
+    
+    
+    </script>
+</head>
+<body>
+    <h1>Assignment 3 Part 1</h1>
+</body>
+</html>
