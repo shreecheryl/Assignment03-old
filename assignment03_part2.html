@@ -5,8 +5,80 @@
     <title>Assignment 3 Part 2</title>
     <script>
     
+        // The Rock, Paper, Scissors Game
+        /*
+        // STEP 1 & 6 - User's choice
+        var userChoice = window.prompt("Enter rock, paper or scissors");
+        userChoice = userChoice.toLowerCase();
+        while (userChoice != "rock" && userChoice != "paper" && userChoice != "scissors") {
+            userChoice = window.prompt("You did not enter rock, paper or scissors. Please try again.");
+            userChoice = userChoice.toLowerCase();
+        }
+        
+        // STEP 2 & 3 - Computer's choice
+        var computerChoice = Math.round(Math.random() * 2);
+        switch (computerChoice) {
+            case 0:
+                computerChoice = "rock";
+                break;
+            case 1: 
+                computerChoice = "paper";
+                break;
+            case 2:
+                computerChoice = "scissors";
+        }
+        
+        // STEP 4 & 5 - Determine winner
+        
+        if (userChoice == "rock" && computerChoice == "paper") {
+            window.alert("You chose " + userChoice + " and the computer chose " + computerChoice + "." + " You lose!");
+        } else if (userChoice == "rock" && computerChoice == "scissors") {
+            window.alert("You chose " + userChoice + " and the computer chose " + computerChoice + "." + " You win!");
+        } else if (userChoice == "paper" && computerChoice == "rock") {
+            window.alert("You chose " + userChoice + " and the computer chose " + computerChoice + "." + " You win!");
+        } else if (userChoice == "paper" && computerChoice == "scissors") {
+            window.alert("You chose " + userChoice + " and the computer chose " + computerChoice + "." + " You lose!");
+        } else if (userChoice == "scissors" && computerChoice == "rock") {
+            window.alert("You chose " + userChoice + " and the computer chose " + computerChoice + "." + " You lose!");
+        } else if (userChoice == "scissors" && computerChoice == "paper") {
+            window.alert("You chose " + userChoice + " and the computer chose " + computerChoice + "." + " You win!");
+        } else {
+            window.alert("You chose " + userChoice + " and the computer chose " + computerChoice + "." + " It's a tie!");
+        }
+        */
+        
+        // The Basic Calculator
+        
         // STEP 1
-
+        
+        var num1 = window.prompt("Enter a number");
+        var num2 = window.prompt("Enter another number");
+        var operation = window.prompt("Enter add, subtract, multiply or divide");
+        operation = operation.toLowerCase();
+        while (operation != "add" && operation != "subtract" && operation != "multiply" && operation != "divide") {
+            userChoice = window.alert("You did not enter add, subtract, multiply or divide. Please click 'OK' to begin again.");
+            num1 = window.prompt("Enter a number");
+            num2 = window.prompt("Enter another number");
+            operation = window.prompt("Enter add, subtract, multiply or divide");
+        }
+       var calculate = function (x, y, calc) {
+           x = Number(x);
+           y = Number(y);
+           switch (calc) {
+                case "add":
+                   window.alert(x + y);
+                   break;
+                case "subtract":
+                   window.alert(x - y);
+                   break;
+                case "multiply":
+                   window.alert(x * y);
+                   break;
+                case "divide":
+                   window.alert(x / y);
+           } 
+       }
+       calculate(num1, num2, operation); 
     
     </script>
 </head>
