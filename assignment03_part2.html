@@ -113,8 +113,38 @@
        */
         
        // STEP 3
+       /*
+       function vowels(msg) {
+           var findVowels = msg.match(/[aeiou]/ig);
+           
+           return findVowels.length;
+       }
         
-       
+       window.console.log(vowels("The quick brown fox"));
+       */
+        
+       // STEP 4
+       /*
+       function createPassword() {
+           var password = [];
+           for (var i = 0; i < 8; i++) {
+               password[i] = Math.floor(Math.random() * 73 + 48);
+               if ((password[i] > 57 && password[i] < 65) || (password[i] > 90 && password[i] < 97)) {
+                   password[i] = password[i] + 8;
+               }
+               
+               password[i] = String.fromCharCode(password[i]);
+           }
+           
+           var newPassword = password.join("");
+           
+           return newPassword;
+       }
+        
+       window.console.log(createPassword());
+       */
+        
+       // STEP 5
         
         
         
